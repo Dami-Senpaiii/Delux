@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt – Deluxe IT</title>
+  <meta name="description" content="Kontakt und kostenlose Reparaturanfrage bei Deluxe IT in Zürich-Oerlikon.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Zum Hauptinhalt springen</a>
+<header>
+  <div class="topbar"><div class="container topbar__inner"><strong>Kostenlose Email Beratung</strong><div class="topbar__links"><a href="tel:+41443105060">+41 44 310 50 60</a><a href="https://wa.me/41799035776">WhatsApp / SMS: +41 79 903 57 76</a></div></div></div>
+  <div class="site-header"><div class="container header__inner"><a class="brand" href="index.html">Deluxe <span class="brand__accent">IT</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menü</button><nav id="primary-nav" class="nav" aria-label="Hauptnavigation"><a href="index.html">Home</a><a href="dienstleistungen-reparaturen.html">Dienstleistungen</a><a href="preise.html">Preise</a><a href="anfahrt.html">Anfahrt</a><a class="btn btn--primary nav__cta" href="kontakt.html" aria-current="page">Kontakt</a></nav></div></div>
+</header>
+
+<main id="main">
+  <header class="page-header"><div class="container"><h1>Kontakt / Kostenlose Reparaturanfrage</h1><p class="lead">Formular-Layout für Anfrage, Rückruf und Einsendung. Backend/Versand ist in dieser Phase noch nicht implementiert.</p></div></header>
+
+  <section class="section">
+    <div class="container page-grid">
+      <article class="surface">
+        <p class="error-msg" role="status">Beispiel für Fehler-/Hinweisbereich: Bitte Pflichtfelder vollständig ausfüllen.</p>
+        <form class="form-grid" action="#" method="post" novalidate>
+          <div class="field">
+            <label for="name">Name <span class="required" aria-hidden="true">*</span></label>
+            <input id="name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">E-Mail <span class="required" aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="telefon">Telefon</label>
+            <input id="telefon" name="telefon" type="tel" autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="kontaktart">Kontaktpräferenz</label>
+            <select id="kontaktart" name="kontaktart">
+              <option>E-Mail</option>
+              <option>Telefon</option>
+              <option>WhatsApp / SMS</option>
+            </select>
+          </div>
+          <div class="field field--full">
+            <label for="anfrageart">Art der Anfrage <span class="required" aria-hidden="true">*</span></label>
+            <select id="anfrageart" name="anfrageart" required>
+              <option value="">Bitte wählen</option>
+              <option>Reparatur</option>
+              <option>Support</option>
+              <option>Offerte / Beratung</option>
+            </select>
+          </div>
+          <div class="field field--full">
+            <label for="nachricht">Nachricht <span class="required" aria-hidden="true">*</span></label>
+            <textarea id="nachricht" name="nachricht" rows="5" required></textarea>
+          </div>
+          <div class="field field--full">
+            <label for="datei">Anhang (optional)</label>
+            <input id="datei" name="datei" type="file" aria-describedby="datei-hilfe">
+            <p id="datei-hilfe" class="help">Platzhalter: z. B. Foto, Rechnung oder Fehlerbild. Maximale Dateigrösse und Typen werden später definiert.</p>
+          </div>
+          <div class="field field--full">
+            <button class="btn btn--primary" type="submit">Anfrage senden</button>
+          </div>
+        </form>
+      </article>
+
+      <aside class="stack">
+        <div class="surface">
+          <h2>Kontakt / Öffnungszeiten</h2>
+          <p>Telefon: +41 44 310 50 60<br>WhatsApp/SMS: +41 79 903 57 76</p>
+          <p>Deluxe IT AG<br>Ohmstrasse 11<br>8050 Zürich-Oerlikon</p>
+          <p class="mb-0">Mo–Fr: 09:00–18:00</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="container footer__bottom">© Deluxe IT AG – Kontakt</div></footer>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
