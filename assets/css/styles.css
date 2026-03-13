@@ -537,4 +537,65 @@ textarea {
     gap: var(--space-3);
     padding: var(--space-4) 0;
   }
+
+  .mobile-optimized .surface {
+    padding: var(--space-3);
+  }
+  .mobile-optimized .page-header {
+    padding: var(--space-4) 0;
+  }
+  .mobile-optimized .card__title {
+    align-items: flex-start;
+  }
+  .mobile-optimized .table-wrap {
+    border: 0;
+    overflow: visible;
+  }
+  .mobile-optimized table,
+  .mobile-optimized thead,
+  .mobile-optimized tbody,
+  .mobile-optimized tr,
+  .mobile-optimized th,
+  .mobile-optimized td {
+    display: block;
+    width: 100%;
+  }
+  .mobile-optimized table {
+    min-width: 0;
+  }
+  .mobile-optimized thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  .mobile-optimized tbody {
+    display: grid;
+    gap: var(--space-2);
+  }
+  .mobile-optimized tr {
+    border: 1px solid var(--grey-300);
+    border-radius: var(--radius-1);
+    padding: var(--space-2);
+    background: #fff;
+  }
+  .mobile-optimized td {
+    border: 0;
+    padding: 6px 0;
+  }
+  .mobile-optimized td::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--grey-700);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin-bottom: 2px;
+  }
 }
